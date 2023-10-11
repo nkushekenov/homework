@@ -1,0 +1,10 @@
+<!-- myapp/templates/myapp/icecream_detail.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ icecream.name }}</h1>
+<p>{{ icecream.description }}</p>
+<p>Price: ${{ icecream.price }}</p>
+<a href="{% url 'home' %}">Back to Home</a>
+{% endblock %}

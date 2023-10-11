@@ -1,0 +1,9 @@
+<!-- myapp/templates/myapp/home.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to Our Ice Cream Shop!</h1>
+<p>Explore our delicious flavors and find your favorite one!</p>
+<a href="{% url 'icecream_list' %}">View all ice cream flavors</a>
+{% endblock %}

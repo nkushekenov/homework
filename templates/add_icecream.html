@@ -1,0 +1,11 @@
+<!-- myapp/templates/myapp/add_icecream.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Add New Ice Cream</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Ice Cream</button>
+  </form>
+{% endblock %}

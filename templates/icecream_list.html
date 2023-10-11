@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Our Ice Cream Flavors</h1>
+<ul>
+    {% for icecream in icecreams %}
+        <li>{{ icecream }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
